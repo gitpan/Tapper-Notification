@@ -1,0 +1,42 @@
+#! /usr/bin/perl
+# PODNAME: tapper-notify-daemon
+# ABSTRACT: cmdline frontend to Tapper::Notification/daemonize
+
+use strict;
+use warnings;
+
+# TODO: redirect STDERR/STDOUT
+
+use Tapper::Notification;
+use App::Daemon 'daemonize';
+$App::Daemon::as_user = "root";
+$App::Daemon::logfile = $ENV{HARNESS_ACTIVE} ? "/tmp/tapper-notification-daemon.log" : '/var/log/tapper-notification-daemon.log';
+$App::Daemon::pidfile = "/tmp/tapper-notification-daemon.pid";
+daemonize();
+my $daemon = Tapper::Notification->new;
+$daemon->loop;
+
+
+__END__
+=pod
+
+=encoding utf-8
+
+=head1 NAME
+
+tapper-notify-daemon - cmdline frontend to Tapper::Notification/daemonize
+
+=head1 AUTHOR
+
+AMD OSRC Tapper Team <tapper@amd64.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2012 by Advanced Micro Devices, Inc..
+
+This is free software, licensed under:
+
+  The (two-clause) FreeBSD License
+
+=cut
+
