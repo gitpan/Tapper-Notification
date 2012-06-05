@@ -3,7 +3,7 @@ BEGIN {
   $Tapper::Notification::Plugin::Mail::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Tapper::Notification::Plugin::Mail::VERSION = '4.0.1';
+  $Tapper::Notification::Plugin::Mail::VERSION = '4.0.2';
 }
 
 use strict;

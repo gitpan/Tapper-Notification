@@ -35,6 +35,8 @@ my %WriteMakefileArgs = (
     "Email::Simple" => 0,
     "Hash::Merge::Simple" => 0,
     "Language::Expr" => 0,
+    "LockFile::Simple" => "0.208",
+    "Module::Find" => "0.11",
     "Moose" => 0,
     "Tapper::Base" => 0,
     "Tapper::Config" => 0,
@@ -44,7 +46,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "4.0.1",
+  "VERSION" => "4.0.2",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -3,7 +3,7 @@ BEGIN {
   $Tapper::Notification::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Tapper::Notification::VERSION = '4.0.1';
+  $Tapper::Notification::VERSION = '4.0.2';
 }
 # ABSTRACT: Tapper - Daemon and plugins to handle MCP notifications
 
