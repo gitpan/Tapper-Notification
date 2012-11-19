@@ -1,11 +1,11 @@
 package Tapper::Notification;
-# git description: v4.0.2-6-ge92f3c3
+# git description: v4.1.0-1-g60d5ae9
 
 BEGIN {
-  $Tapper::Notification::AUTHORITY = 'cpan:AMD';
+  $Tapper::Notification::AUTHORITY = 'cpan:TAPPER';
 }
 {
-  $Tapper::Notification::VERSION = '4.1.0';
+  $Tapper::Notification::VERSION = '4.1.1';
 }
 # ABSTRACT: Tapper - Daemon and plugins to handle MCP notifications
 

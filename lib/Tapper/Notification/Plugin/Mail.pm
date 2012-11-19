@@ -1,9 +1,9 @@
 package Tapper::Notification::Plugin::Mail;
 BEGIN {
-  $Tapper::Notification::Plugin::Mail::AUTHORITY = 'cpan:AMD';
+  $Tapper::Notification::Plugin::Mail::AUTHORITY = 'cpan:TAPPER';
 }
 {
-  $Tapper::Notification::Plugin::Mail::VERSION = '4.1.0';
+  $Tapper::Notification::Plugin::Mail::VERSION = '4.1.1';
 }
 
 use strict;
